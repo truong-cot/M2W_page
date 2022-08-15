@@ -47,22 +47,19 @@
 		}
 
 		.banner {
-			position: relative;
 			width: 100%;
+			height: 300px;
 		}
 
 		.banner img {
 			width: 100%;
-			min-width: 200px;
-			max-height: 100%;
+			height: 100%;
 		}
 
 		.banner .content {
-			position: absolute;
-			top: 50%;
-			left: 18%;
-			transform: translate(-18%, -50%);
-			padding: 12px 0;
+			margin-top: -220px;
+			margin-left: 40px;
+			/* margin-bottom: 100px; */
 		}
 
 		.banner .content .welcome {
@@ -70,23 +67,6 @@
 			font-size: 3vmin;
 			color: #ffffff;
 			margin-top: 8px;
-		}
-
-		.banner .content h3 {
-			font-weight: 700;
-			font-size: 6vmin;
-			background: linear-gradient(
-				180deg,
-				#dcba45 0.08%,
-				#fff168 31.06%,
-				#e8b641 70.02%,
-				#d8ad42 100%
-			);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-			text-fill-color: transparent;
-			padding-bottom: 15px;
 		}
 
 		.banner .content .text {
@@ -103,6 +83,7 @@
 			font-weight: 700;
 			font-size: 3vmin;
 			color: #0d0d0e;
+			margin-top: 40px;
 		}
 
 		.main-top .account {
@@ -110,21 +91,6 @@
 			font-weight: 500;
 			font-size: 2vmin;
 			line-height: 20px;
-			margin-bottom: 12px;
-		}
-
-		.main-top .account span {
-			font-weight: 600;
-			font-size: 2vmin;
-			line-height: 20px;
-			color: #0074df;
-		}
-
-		.main-top .account a {
-			font-weight: 600;
-			font-size: 2vmin;
-			line-height: 20px;
-			color: #0074df;
 			margin-bottom: 12px;
 		}
 
@@ -141,23 +107,16 @@
 			color: #0d0d0e;
 		}
 
-		.main-top .des .des-text a {
-			font-weight: 600;
-			font-size: 2vmin;
-			line-height: 20px;
-			color: #0074df;
-			margin-bottom: 12px;
-		}
-
 		.main-bottom {
 			background-color: red;
 			margin-top: 12px;
 			padding: 32px;
 			background-color: #fff;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
+		}
+
+		.main-bottom img {
+			display: block;
+			margin: 0 auto;
 		}
 
 		.main-bottom .text-bottom-des {
@@ -168,26 +127,7 @@
 			letter-spacing: 0.01em;
 			color: #0d0d0e;
 			margin-top: 12px;
-		}
-
-		.main-bottom .text-bottom-des a {
-			font-weight: 500;
-			font-size: 2vmin;
-			line-height: 20px;
 			text-align: center;
-			letter-spacing: 0.01em;
-			color: #0074df;
-		}
-
-		.main-bottom .footer {
-			font-weight: 500;
-			font-size: 2vmin;
-			line-height: 22px;
-			text-align: center;
-			letter-spacing: 0.01em;
-			text-transform: uppercase;
-			color: #0074df;
-			margin-top: 12px;
 		}
 	</style>
 	<body>
@@ -199,37 +139,93 @@
 						src="https://devops-production.net88.asia/files/email/img/logo.png"
 						alt="logo"
 					/>
-					<div class="banner">
+					<div style="width: 100%; height: 300px" class="banner">
 						<img
+							style="width: 100%; height: 100%"
 							src="https://devops-production.net88.asia/files/email/img/banneragent.png"
 							alt="banner"
 						/>
-						<div class="content">
-							<div style="margin: auto 0">
-								<p class="welcome">Welcome to</p>
-								<h3>Agent Net88</h3>
-								<p class="text">
-									We promise to bring online entertainment service and the best
-									experience.
-								</p>
-							</div>
+						<div style="margin-top: -220px; margin-left: 40px" class="content">
+							<p class="welcome">Welcome to</p>
+							<h3
+								style="
+									font-weight: 700;
+									font-size: 6vmin;
+									color: #dcba45;
+									padding-bottom: 15px;
+								"
+							>
+								Agent Net88
+							</h3>
+							<p class="text">
+								We promise to bring online entertainment service and the best
+								experience.
+							</p>
 						</div>
 					</div>
-					<h2 class="text-title">
-						Congratulations on your registration to become an agent of Net88!
-					</h2>
-					<p class="account">Your account: <span>truong123</span></p>
-					<p class="account">Password: <span>truong123</span></p>
-					<p class="account">
-						Please visit the link to access the system:
-						<a href="/">https://www.dl.net88.com/</a>
-					</p>
+					<div>
+						<h2 class="text-title">
+							Congratulations on your registration to become an agent of Net88!
+						</h2>
+						<p class="account">
+							Your account:
+							<span
+								style="
+									font-weight: 600;
+									font-size: 2vmin;
+									line-height: 20px;
+									color: #0074df;
+								"
+								>truong123</span
+							>
+						</p>
+						<p class="account">
+							Password:
+							<span
+								style="
+									font-weight: 600;
+									font-size: 2vmin;
+									line-height: 20px;
+									color: #0074df;
+								"
+								>truong123</span
+							>
+						</p>
+						<p class="account">
+							Please visit the link to access the system:
+							<a
+								style="
+									font-weight: 500;
+									font-size: 2vmin;
+									line-height: 20px;
+									text-align: center;
+									letter-spacing: 0.01em;
+									color: #0074df;
+								"
+								href="/"
+								>https://www.dl.net88.com/</a
+							>
+						</p>
+					</div>
+
 					<!-- <div class="line"></div> -->
 					<div class="des">
 						<p class="des-text">
 							This email is automatically sent by the system, Please do not reply to
 							this email message. If you have any questions, please contact customer
-							service 24/7 or send an email to <a href="/">suport@net88.com.</a>
+							service 24/7 or send an email to
+							<a
+								style="
+									font-weight: 500;
+									font-size: 2vmin;
+									line-height: 20px;
+									text-align: center;
+									letter-spacing: 0.01em;
+									color: #0074df;
+								"
+								href="/"
+								>suport@net88.com.</a
+							>
 						</p>
 					</div>
 				</div>
@@ -241,9 +237,48 @@
 					/>
 					<p class="text-bottom-des">
 						Net88 © 2022. All Rights Reserved. www.net88.com View our
-						<a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a>.
+						<a
+							style="
+								font-weight: 500;
+								font-size: 2vmin;
+								line-height: 20px;
+								text-align: center;
+								letter-spacing: 0.01em;
+								color: #0074df;
+							"
+							href="/"
+							>Terms of Use</a
+						>
+						and
+						<a
+							style="
+								font-weight: 500;
+								font-size: 2vmin;
+								line-height: 20px;
+								text-align: center;
+								letter-spacing: 0.01em;
+								color: #0074df;
+							"
+							href="/"
+							>Privacy Policy</a
+						>.
 					</p>
-					<p class="footer">Unsubscribe</p>
+					<p
+						style="
+							font-weight: 500;
+							font-size: 2vmin;
+							line-height: 22px;
+							text-align: center;
+							letter-spacing: 0.01em;
+							text-transform: uppercase;
+							color: #0074df;
+							text-align: center;
+							margin-top: 12px;
+						"
+						class="footer"
+					>
+						Unsubscribe
+					</p>
 				</div>
 			</div>
 		</div>
