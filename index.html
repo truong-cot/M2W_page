@@ -49,14 +49,12 @@
 		.banner {
 			position: relative;
 			width: 100%;
-			background-image: url('https://devops-production.net88.asia/files/email/img/banneragent.png');
-			background-size: cover;
-			background-position: 50%;
-			background-repeat: no-repeat;
-			object-fit: cover;
-			padding-top: 35%;
-			border-radius: 8px;
-			height: 0;
+		}
+
+		.banner img {
+			width: 100%;
+			min-width: 200px;
+			max-height: 100%;
 		}
 
 		.banner .content {
@@ -64,13 +62,14 @@
 			top: 50%;
 			left: 18%;
 			transform: translate(-18%, -50%);
-			padding: 8px 0;
+			padding: 12px 0;
 		}
 
 		.banner .content .welcome {
 			font-weight: 600;
 			font-size: 3vmin;
 			color: #ffffff;
+			margin-top: 8px;
 		}
 
 		.banner .content h3 {
@@ -95,6 +94,7 @@
 			font-size: 2vmin;
 			line-height: 2vmin;
 			color: #d2d2d2;
+			padding-bottom: 8px;
 		}
 
 		.main-top .text-title {
@@ -200,6 +200,10 @@
 						alt="logo"
 					/>
 					<div class="banner">
+						<img
+							src="https://devops-production.net88.asia/files/email/img/banneragent.png"
+							alt="banner"
+						/>
 						<div class="content">
 							<div style="margin: auto 0">
 								<p class="welcome">Welcome to</p>
