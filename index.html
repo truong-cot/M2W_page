@@ -19,6 +19,11 @@
 			font-family: 'SF Pro Display';
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
+		}
+
+		a {
+			text-decoration: none;
 		}
 
 		.container {
@@ -27,29 +32,34 @@
 			align-items: center;
 			flex-direction: column;
 			background-color: #f4f5f6;
-			width: 100%;
-			padding: 100px 0;
-			margin: 0;
+			margin: 50px 0;
 		}
 
 		.main {
-			width: 640px;
+			width: 80%;
+			margin: 50px 0;
 		}
 
 		.main-top {
 			background-color: #fff;
-			/* min-width: 580px; */
 			padding: 32px;
 		}
 
 		.banner {
 			position: relative;
-			width: 576px;
+			width: 100%;
+			height: 100%;
+			border-radius: 8px;
+		}
+
+		.banner img {
+			width: 100%;
+			height: 100%;
 		}
 
 		.banner .content {
 			position: absolute;
-			left: 32px;
+			left: 4vmin;
 			top: 50%;
 			transform: translateY(-50%);
 		}
@@ -57,17 +67,16 @@
 		.banner .content .welcome {
 			font-style: normal;
 			font-weight: 600;
-			font-size: 12px;
-			line-height: 24px;
+			font-size: 2vmin;
+			line-height: 4vmin;
 			letter-spacing: 0.01em;
 			color: #ffffff;
 		}
 
 		.banner .content h3 {
-			font-style: normal;
 			font-weight: 700;
-			font-size: 32px;
-			line-height: 44px;
+			font-size: 5vmin;
+			line-height: 6vmin;
 			letter-spacing: 0.01em;
 			background: linear-gradient(
 				180deg,
@@ -80,17 +89,15 @@
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 			text-fill-color: transparent;
-			margin-bottom: 10px;
+			margin-bottom: 12px;
 		}
 
 		.banner .content .text {
-			width: 198px;
-			height: 28px;
 			font-family: 'SF Pro Display';
 			font-style: normal;
 			font-weight: 500;
-			font-size: 8px;
-			line-height: 14px;
+			font-size: 2vmin;
+			line-height: 2vmin;
 			color: #d2d2d2;
 		}
 
@@ -98,7 +105,7 @@
 			margin-top: 24px;
 			margin-bottom: 12px;
 			font-weight: 700;
-			font-size: 16px;
+			font-size: 1.6rem;
 			line-height: 24px;
 			color: #0d0d0e;
 			letter-spacing: 0.01em;
@@ -107,25 +114,24 @@
 		.main-top .account {
 			color: #0d0d0e;
 			font-weight: 500;
-			font-size: 13px;
+			font-size: 1.3rem;
 			line-height: 20px;
 			margin-bottom: 12px;
 		}
 
 		.main-top .account span {
 			font-weight: 600;
-			font-size: 13px;
+			font-size: 1.3rem;
 			line-height: 20px;
 			color: #0074df;
 		}
 
 		.main-top .account a {
 			font-weight: 600;
-			font-size: 13px;
+			font-size: 1.3rem;
 			line-height: 20px;
 			color: #0074df;
 			margin-bottom: 12px;
-			text-decoration: none;
 		}
 
 		.main-top .des {
@@ -135,20 +141,18 @@
 		}
 
 		.main-top .des .des-text {
-			width: 576px;
 			font-weight: 500;
-			font-size: 13px;
+			font-size: 1.3rem;
 			line-height: 20px;
 			color: #0d0d0e;
 		}
 
 		.main-top .des .des-text a {
 			font-weight: 600;
-			font-size: 13px;
+			font-size: 1.3rem;
 			line-height: 20px;
 			color: #0074df;
 			margin-bottom: 12px;
-			text-decoration: none;
 		}
 
 		.main-bottom {
@@ -163,9 +167,8 @@
 		}
 
 		.main-bottom .text-bottom-des {
-			width: 282px;
 			font-weight: 500;
-			font-size: 12px;
+			font-size: 1.2rem;
 			line-height: 20px;
 			text-align: center;
 			letter-spacing: 0.01em;
@@ -173,9 +176,18 @@
 			margin-top: 12px;
 		}
 
+		.main-bottom .text-bottom-des a {
+			font-weight: 500;
+			font-size: 1.2rem;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.01em;
+			color: #0074df;
+		}
+
 		.main-bottom .footer {
 			font-weight: 500;
-			font-size: 14px;
+			font-size: 1.4rem;
 			line-height: 22px;
 			text-align: center;
 			letter-spacing: 0.01em;
@@ -215,7 +227,7 @@
 					<p class="account">Password: <span>truong123</span></p>
 					<p class="account">
 						Please visit the link to access the system:
-						<a href="/">https://www.youtube.com/</a>
+						<a href="/">https://www.dl.net88.com/</a>
 					</p>
 					<!-- <div class="line"></div> -->
 					<div class="des">
