@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email</title>
+	</head>
+
+	<style>
+		body,
+		html,
+		p,
+		h1,
+		h2,
+		h3,
+		span,
+		img {
+			font-family: 'SF Pro Display';
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: #f4f5f6;
+			width: 100%;
+			height: 100vh;
+		}
+
+		.main {
+			width: 640px;
+		}
+
+		.main-top {
+			background-color: #fff;
+			/* min-width: 580px; */
+			padding: 32px;
+		}
+
+		.banner {
+			position: relative;
+			width: 576px;
+		}
+
+		.banner .content {
+			position: absolute;
+			left: 32px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.banner .content .welcome {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 24px;
+			letter-spacing: 0.01em;
+			color: #ffffff;
+		}
+
+		.banner .content h3 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 44px;
+			letter-spacing: 0.01em;
+			background: linear-gradient(
+				180deg,
+				#dcba45 0.08%,
+				#fff168 31.06%,
+				#e8b641 70.02%,
+				#d8ad42 100%
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			margin-bottom: 10px;
+		}
+
+		.banner .content .text {
+			width: 198px;
+			height: 28px;
+			font-family: 'SF Pro Display';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 8px;
+			line-height: 14px;
+			color: #d2d2d2;
+		}
+
+		.main-top .text-title {
+			margin-top: 24px;
+			margin-bottom: 12px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 24px;
+			color: #0d0d0e;
+			letter-spacing: 0.01em;
+		}
+
+		.main-top .account {
+			color: #0d0d0e;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 20px;
+			margin-bottom: 12px;
+		}
+
+		.main-top .account span {
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 20px;
+			color: #0074df;
+		}
+
+		.main-top .account a {
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 20px;
+			color: #0074df;
+			margin-bottom: 12px;
+			text-decoration: none;
+		}
+
+		.main-top .des {
+			width: 100%;
+			padding-top: 12px;
+			border-top: 1px dashed #0d0d0e;
+		}
+
+		.main-top .des .des-text {
+			width: 576px;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 20px;
+			color: #0d0d0e;
+		}
+
+		.main-top .des .des-text a {
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 20px;
+			color: #0074df;
+			margin-bottom: 12px;
+			text-decoration: none;
+		}
+
+		.main-bottom {
+			background-color: red;
+			margin-top: 12px;
+			padding: 32px;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.main-bottom .text-bottom-des {
+			width: 282px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.01em;
+			color: #0d0d0e;
+			margin-top: 12px;
+		}
+
+		.main-bottom .footer {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 22px;
+			text-align: center;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #0074df;
+			margin-top: 12px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="main">
+				<div class="main-top">
+					<img class="image_logo" src="../asset/image/net88Logo.png" alt="logo" />
+					<div class="banner">
+						<img class="image_banner" src="../asset/image/AgentBanner.png" alt="logo" />
+						<div class="content">
+							<p class="welcome">Welcome to</p>
+							<h3>Agent Net88</h3>
+							<p class="text">
+								We promise to bring online entertainment service and the best
+								experience.
+							</p>
+						</div>
+					</div>
+					<h2 class="text-title">
+						Congratulations on your registration to become an agent of Net88!
+					</h2>
+					<p class="account">Your account: <span>truong123</span></p>
+					<p class="account">Password: <span>truong123</span></p>
+					<p class="account">
+						Please visit the link to access the system:
+						<a href="/">https://www.youtube.com/</a>
+					</p>
+					<!-- <div class="line"></div> -->
+					<div class="des">
+						<p class="des-text">
+							This email is automatically sent by the system, Please do not reply to
+							this email message. If you have any questions, please contact customer
+							service 24/7 or send an email to <a href="/">suport@net88.com.</a>
+						</p>
+					</div>
+				</div>
+				<div class="main-bottom">
+					<img class="image_logo" src="./asset/image/net88Logo.png" alt="logo" />
+					<p class="text-bottom-des">
+						Net88 © 2022. All Rights Reserved. www.net88.com View our
+						<a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a>.
+					</p>
+					<p class="footer">Unsubscribe</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
