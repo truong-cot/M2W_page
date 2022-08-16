@@ -60,36 +60,25 @@
 	</style>
 	<body
 		style="
-			-moz-osx-font-smoothing: grayscale;
-			-ms-text-size-adjust: 100%;
-			-webkit-font-smoothing: antialiased;
-			-webkit-text-size-adjust: 100%;
-			background-color: #f4f4f4;
-			color: #4e5054;
+			background-color: #f4f5f6;
 			font-family: 'SF Pro Display';
-			font-size: 12px;
-			font-smoothing: antialiased;
-			font-weight: normal;
-			line-height: 18px;
-			margin: 0;
-			min-width: 100%;
-			padding: 0;
-			text-align: left;
 			width: 100% !important;
+			height: 100%;
+			min-height: 100vh;
+			padding: 32px;
 		"
 	>
 		<div
-			class="container"
 			style="
 				background-color: #fff;
-				width: 80%;
+				max-width: 640px;
 				margin: 0 auto;
 				margin-top: 32px;
 				padding: 32px;
 			"
 		>
 			<!-- Logo -->
-			<table style="width: 12%; height: 80%">
+			<table style="width: 100px; height: 50px; margin-bottom: 12px">
 				<tr>
 					<td>
 						<img
@@ -102,64 +91,62 @@
 			</table>
 
 			<!-- Banner -->
-			<!-- <table style="width: 100%; height: 100%; margin-top: 12px; position: relative">
-				<tr>
-					<td>
-						<img
-							style="width: 100%; height: 100%"
-							src="https://devops-production.net88.asia/files/email/img/banneragent.png"
-							alt="banner"
-						/>
-					</td>
-				</tr>
-			</table> -->
-
 			<table
-				width="100%"
 				style="
 					margin: 0px;
 					padding: 0px;
+					border-collapse: collapse;
 					background-color: rgb(255, 255, 255);
 					width: 100%;
-					height: 200px;
-					background-size: cover;
 					border-radius: 8px;
+					background-size: cover;
+					object-fit: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
 				"
 				cellspacing="0"
 				cellpadding="20"
 				background="https://devops-production.net88.asia/files/email/img/banneragent.png"
+				background-size="cover"
 			>
 				<tbody>
 					<tr>
 						<td valign="top">
 							<p
 								style="
-									margin-top: 48px;
+									margin-top: 8%;
+									margin-left: 4%;
+									color: #ffffff;
+									font-weight: 600;
+									font-size: 3vmin;
 									line-height: 24px;
-									letter-spacing: 0.55px;
-									margin-bottom: 10px;
+									letter-spacing: 0.01em;
 								"
 							>
 								Welcome to
 							</p>
 							<p
 								style="
-									text-align: justify;
-									line-height: 24px;
-									letter-spacing: 0.55px;
-									margin-top: 10px;
-									margin-bottom: 10px;
+									color: #fff56a;
+									font-weight: 700;
+									font-size: 5vmin;
+									line-height: 6vmin;
+									letter-spacing: 0.01em;
+									margin-left: 4%;
+									margin-bottom: 12px;
 								"
 							>
 								Agent Net88
 							</p>
 							<p
 								style="
-									text-align: justify;
-									line-height: 24px;
-									letter-spacing: 0.55px;
+									font-weight: 500;
+									font-size: 2vmin;
+									line-height: 14px;
+									color: #d2d2d2;
 									margin-top: 10px;
-									margin-bottom: 48px;
+									margin-left: 4%;
+									margin-bottom: 8%;
 								"
 							>
 								We promise to bring online entertainment service and the best
@@ -255,9 +242,21 @@
 					</td>
 				</tr>
 			</table>
+		</div>
 
-			<!-- BOTTOM -->
-			<!-- <table style="width: 12%; height: 80%">
+		<!-- BOTTOM -->
+		<div
+			style="
+				background-color: #fff;
+				max-width: 640px;
+				margin: 0 auto;
+				margin-top: 12px;
+				margin-bottom: 32px;
+				padding: 32px;
+			"
+		>
+			<!-- LOGO -->
+			<table style="width: 100px; height: 50px; margin: 0 auto">
 				<tr>
 					<td>
 						<img
@@ -267,7 +266,82 @@
 						/>
 					</td>
 				</tr>
-			</table> -->
+			</table>
+
+			<!-- TEXT -->
+			<table style="width: 50%; margin: 0 auto">
+				<tr>
+					<td>
+						<p
+							style="
+								text-align: center;
+								margin-top: 12px;
+								font-weight: 500;
+								font-size: 2vmin;
+								line-height: 20px;
+								text-align: center;
+								letter-spacing: 0.01em;
+								color: #0d0d0e;
+							"
+						>
+							Net88 © 2022. All Rights Reserved.
+							<span
+								style="
+									text-align: center;
+									font-weight: 500;
+									font-size: 2vmin;
+									line-height: 20px;
+									letter-spacing: 0.01em;
+									color: #0074df;
+								"
+								>www.net88.com</span
+							>
+							View our
+							<span
+								style="
+									font-weight: 500;
+									font-size: 2vmin;
+									line-height: 20px;
+									letter-spacing: 0.01em;
+									color: #0074df;
+								"
+								>Terms of Use</span
+							>
+							and
+							<span
+								style="
+									font-weight: 500;
+									font-size: 2vmin;
+									line-height: 20px;
+									letter-spacing: 0.01em;
+									color: #0074df;
+								"
+								>Privacy Policy.</span
+							>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<!-- FOOTER -->
+			<table style="width: fit-content; margin: 0 auto; margin-top: 12px">
+				<tr>
+					<td>
+						<p
+							style="
+								font-weight: 500;
+								font-size: 2vmin;
+								line-height: 22px;
+								letter-spacing: 0.01em;
+								text-transform: uppercase;
+								color: #0074df;
+							"
+						>
+							Unsubscribe
+						</p>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>
